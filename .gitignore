@@ -1,4 +1,4 @@
 .envs
 *.tmp
 .idea
-bin
+bin/
