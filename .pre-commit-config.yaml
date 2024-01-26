@@ -1,0 +1,19 @@
+repos:
+    -   repo: https://github.com/pre-commit/pre-commit-hooks
+        rev: v2.3.0
+        hooks:
+        -   id: end-of-file-fixer
+            exclude_types: [csv]
+        -   id: trailing-whitespace
+            exclude_types: [csv]
+            args: [--markdown-linebreak-ext=md]
+        -   id: pretty-format-json
+            args: ["--autofix"]
+        -   id: mixed-line-ending
+        -   id: name-tests-test
+    -   repo: local
+        hooks:
+        -   id: simple_check
+            name: simple check
+            language: script
+            entry: ./pre-commit.sh
