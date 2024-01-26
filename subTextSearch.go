@@ -21,7 +21,6 @@ func main() {
 	searchAble = strings.TrimSuffix(searchAble, "\n")
 
 	fmt.Println(simpleTextSearch(searchAble, searchText))
-	//fastTextSearch(searchAble, searchText)
 }
 
 // simpleTextSearch is a simple text search algorithm that just iterates over the searchAble string
